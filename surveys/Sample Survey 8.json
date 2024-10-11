@@ -1,0 +1,14 @@
+{
+	"questions": [
+		{"question": "Do you own a VR headset?", "type": "multiplechoice", "options": ["Yes", "No"]},
+		{"question": "What is your favourite VR game?", "type": "entry"},
+		{"question": "How often do you play VR games?", "type": "multiplechoice", "options": ["Daily", "Weekly", "Monthly", "Rarely", "Never"]},
+		{"question": "What features do you enjoy most in VR gaming?", "type": "multiplechoice", "options": ["Immersion", "Graphics", "Gameplay", "Multiplayer"]},
+		{"question": "How do you feel about the current VR market?", "type": "multiplechoice", "options": ["Very positive", "Somewhat positive", "Neutral", "Somewhat negative", "Very negative"]},
+		{"question": "What improvements would you like to see in VR gaming?", "type": "entry"},
+		{"question": "Do you play VR games alone or with friends?", "type": "multiplechoice", "options": ["Alone", "With friends"]},
+		{"question": "What genres do you prefer in VR?", "type": "multiplechoice", "options": ["Action", "Adventure", "Simulation", "Puzzle"]},
+		{"question": "How did you first learn about VR gaming?", "type": "multiplechoice", "options": ["Friends", "YouTube", "Social media", "Advertisements"]},
+		{"question": "What is your biggest concern about VR gaming?", "type": "entry"}
+	]
+}

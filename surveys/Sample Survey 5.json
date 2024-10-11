@@ -1,0 +1,14 @@
+{
+	"questions": [
+		{"question": "How often do you watch e-sports?", "type": "multiplechoice", "options": ["Daily", "Weekly", "Monthly", "Rarely", "Never"]},
+		{"question": "What is your favourite e-sport game?", "type": "entry"},
+		{"question": "Which team do you support in e-sports?", "type": "entry"},
+		{"question": "How do you feel about e-sports becoming mainstream?", "type": "multiplechoice", "options": ["Very positive", "Somewhat positive", "Neutral", "Somewhat negative", "Very negative"]},
+		{"question": "Do you participate in e-sports tournaments?", "type": "multiplechoice", "options": ["Yes", "No"]},
+		{"question": "What is the most important aspect of e-sports for you?", "type": "multiplechoice", "options": ["Skill level", "Entertainment", "Community", "Prize money"]},
+		{"question": "How do you usually watch e-sports events?", "type": "multiplechoice", "options": ["Twitch", "YouTube", "TV", "In-person"]},
+		{"question": "What do you enjoy most about e-sports?", "type": "entry"},
+		{"question": "Which e-sports league do you follow?", "type": "entry"},
+		{"question": "What improvements would you like to see in the e-sports industry?", "type": "entry"}
+	]
+}

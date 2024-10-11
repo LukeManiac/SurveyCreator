@@ -1,0 +1,14 @@
+{
+	"questions": [
+		{"question": "What type of games do you prefer developing?", "type": "multiplechoice", "options": ["2D", "3D", "Mobile", "VR"]},
+		{"question": "What programming languages do you use for game development?", "type": "entry"},
+		{"question": "What game engine do you prefer?", "type": "multiplechoice", "options": ["Unity", "Unreal Engine", "Godot", "Others"]},
+		{"question": "How long have you been developing games?", "type": "entry"},
+		{"question": "What is the biggest challenge you face in game development?", "type": "entry"},
+		{"question": "Do you collaborate with other developers?", "type": "multiplechoice", "options": ["Yes", "No"]},
+		{"question": "How do you market your games?", "type": "entry"},
+		{"question": "What resources do you find most helpful in game development?", "type": "entry"},
+		{"question": "How do you gather feedback on your games?", "type": "entry"},
+		{"question": "What would you like to learn next in game development?", "type": "entry"}
+	]
+}

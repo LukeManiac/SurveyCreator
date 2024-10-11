@@ -1,0 +1,14 @@
+{
+	"questions": [
+		{"question": "What is your favourite story-driven game?", "type": "entry"},
+		{"question": "How important is a narrative in a game for you?", "type": "multiplechoice", "options": ["Very important", "Somewhat important", "Not important"]},
+		{"question": "What narrative elements do you enjoy the most?", "type": "multiplechoice", "options": ["Character development", "Plot twists", "World-building", "Dialogue"]},
+		{"question": "Do you prefer linear or open-world storytelling?", "type": "multiplechoice", "options": ["Linear", "Open-world"]},
+		{"question": "How do you feel about player choices impacting the story?", "type": "multiplechoice", "options": ["Very positive", "Somewhat positive", "Neutral", "Somewhat negative", "Very negative"]},
+		{"question": "What game has the best character development in your opinion?", "type": "entry"},
+		{"question": "What would you like to see more of in game narratives?", "type": "entry"},
+		{"question": "How often do you replay games for their story?", "type": "multiplechoice", "options": ["Always", "Often", "Sometimes", "Rarely", "Never"]},
+		{"question": "What influences your interest in a game's story?", "type": "entry"},
+		{"question": "Do you read or watch content related to game narratives?", "type": "multiplechoice", "options": ["Yes", "No"]}
+	]
+}
