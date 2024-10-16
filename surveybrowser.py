@@ -2,6 +2,7 @@ import os
 import json
 import escapedetector
 import main
+from random import randint as randomnumber
 
 def open_survey_menu():
         surveys = [f for f in os.listdir('surveys') if f.endswith('.json')]
@@ -17,7 +18,14 @@ def open_survey_menu():
         for i, survey in enumerate(surveys):
                 print(f"{i + 1}. {survey}")
         
-        survey_id = int(input("Enter the ID of the survey to open: "))
+        survey_id = input("Enter the ID of the survey to open (leave blank or write anything else for random): ")
+        if isinstance(survey_id, int):
+                survey_id = int(survey_id)
+        elif isinstance(survey_id, str) or survey_id > len(surveys):
+                if isinstance(survey_id, str):
+                        print("Entered number is greater than list.")
+                survey_id = randomnumber(1,len(surveys))
+                print(f"Choosing survey number {survey_id - 1}, named {surveys[survey_id - 1]}...")
         selected_survey = surveys[survey_id - 1]
 
         action = int(input(f"Take survey?\n\n1. Yes\n2. Nah\n"))
