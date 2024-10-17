@@ -47,18 +47,20 @@ def take_survey(survey_file):
                         for i, option in enumerate(question['options']):
                                 print(f"{i + 1}. {option}")
                         answer = input("Select your answer: ")
+                        options = question['options']
+                        results[question['question']] = options[int(answer) - 1]
                 else:
                         answer = input("Write your response: ")
-                results[question['question']] = answer
+                        results[question['question']] = answer
 
                 if escapedetector.esc_confirm("Exit survey without saving?"):
                         main.main_menu()
                         return
-
-        results_file = survey_file.replace('.json', '_results.json')
-        with open(f"surveys/{results_file}", 'w') as file:
-                json.dump(results, file)
-        print(f"Results saved as {results_file}.")
+        saveresults = int(input("Save results?\n\n1. Yes\nAny other key. No\n"))
+        if saveresults == 1:
+                with open(f"results/{survey_file}", 'w') as file:
+                        json.dump(results, file)
+                print(f"Results saved in results/{survey_file}.")
         main.main_menu()
         return
 
