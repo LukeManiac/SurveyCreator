@@ -151,7 +151,6 @@ samplesurveys = [
 def main_menu():
         print("1. Create a Survey")
         print("2. Open a Survey")
-        print("3. TKinter Edition (Beta)")
         print("Any other key: Quit")
         choice = input("Select an option: ")
         if choice == "1":
