@@ -3,6 +3,7 @@ import surveybrowser
 import escapedetector
 import json
 import os
+import sys
 
 samplesurveys = [
         {
@@ -161,7 +162,7 @@ def main_menu():
                 escapedetector.end()
                 surveybrowser.end()
                 surveycreator.end()
-                exit()
+                sys.exit()
 
 if __name__ == "__main__":
         # Ensure the 'results' directory exists
