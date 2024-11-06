@@ -2,6 +2,7 @@ import json
 import os
 import escapedetector
 import main
+import sys
 
 def create_survey_menu():
         survey = {}
@@ -44,4 +45,4 @@ def create_survey_menu():
         return
 
 def end():
-        exit()
+        sys.exit()
