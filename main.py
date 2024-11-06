@@ -150,6 +150,7 @@ samplesurveys = [
 def main_menu():
         print("1. Create a Survey")
         print("2. Open a Survey")
+        print("3. TKinter Edition (Beta)")
         print("Any other key: Quit")
         choice = input("Select an option: ")
         if choice == "1":
@@ -163,11 +164,18 @@ def main_menu():
                 exit()
 
 if __name__ == "__main__":
+        # Ensure the 'results' directory exists
         if not os.path.exists('results'):
-                os.makedirs('results')
+            os.makedirs('results')
+        
+        # Ensure the 'surveys' directory exists and check if it's empty
         if not os.path.exists('surveys'):
-                os.makedirs('surveys')
-                for i in range(len(samplesurveys)):
+            os.makedirs('surveys')
+    
+        # Check if any sample survey exists; if not, save the samplesurveys
+        if not any(os.path.isfile(os.path.join('surveys', f)) for f in os.listdir('surveys')):
+                for i, survey in enumerate(samplesurveys):
                         with open(f"surveys/Sample Survey {i+1}.json", "w") as file:
-                                json.dump(samplesurveys[i], file)
+                                json.dump(survey, file)
+                
         escapedetector.start_esc_listener(main_menu)
