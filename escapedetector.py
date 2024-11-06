@@ -1,4 +1,5 @@
 import keyboard
+import sys
 
 def esc_confirm(prompt):
         key = keyboard.read_event()
@@ -12,4 +13,4 @@ def start_esc_listener(callback):
         callback()
 
 def end():
-        exit()
+        sys.exit()
