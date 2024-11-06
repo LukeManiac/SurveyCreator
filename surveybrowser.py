@@ -2,6 +2,7 @@ import os
 import json
 import escapedetector
 import main
+import sys
 from random import randint as randomnumber
 
 def open_survey_menu():
@@ -65,4 +66,4 @@ def take_survey(survey_file):
         return
 
 def end():
-        exit()
+        sys.exit()
